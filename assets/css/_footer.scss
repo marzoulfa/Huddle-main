@@ -1,0 +1,144 @@
+.footer{
+    font-size: 1.6rem;
+    background-color: $veryDarkCyan;
+    padding: 10.8rem 1rem 1rem;
+    position: relative;
+    color: rgb(228, 228, 228);
+   
+    .logo{
+        height: 10rem;
+   }
+
+    &__content{
+        
+      
+        
+        address{
+            div:not(:last-child){
+                margin-bottom: 3rem;
+            }
+            // div:first-child{
+            //     margin-bottom: 0;
+            // }
+
+       
+            
+            .icon{
+          
+                float: left;
+                margin-top: 5px;
+            }
+            
+            p{
+                margin-left: 4rem;
+                font-style: normal;
+            }
+        }
+
+        .links{
+            margin-top: 6rem;
+            margin-bottom: 5rem;
+           li{
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+             }
+               a{
+                   color: rgb(228, 228, 228);
+                }
+
+            }
+        }
+        
+        .socail-icons{
+            text-align: center;
+            margin-bottom: 3rem;
+            span{
+              
+                cursor: pointer;
+                padding: 0.7rem 1rem;
+                border: 1px solid rgb(228, 228, 228);;
+                border-radius: 50%;
+
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+
+                &:first-child{
+                    padding-left: 1.2rem;
+                    padding-right: 1.2rem;
+                }
+            }
+
+
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: 1.3rem;
+        height: 20vh;
+    }
+}
+
+
+@media screen and (min-width: 968px){
+      
+    .footer{
+        font-size: 2.2rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+
+
+        .logo{
+            height: 16rem;
+        }
+
+        &__content{
+            display: flex;
+            justify-content: space-between;
+
+            article{
+                &:first-child{
+
+                    width: 32%;
+                }
+            }
+
+           .links{
+               margin-top: 0;
+               display: flex;
+               column-gap: 15rem;
+              
+               ul{
+                   list-style-type: none;
+                   
+                   li{
+                      line-height: 2;
+                   }
+               }
+           }
+           .socail-icons{
+               margin-right: 200px;
+
+               span{
+                   &:hover{
+                       border: 1px solid $pink;
+                   
+                   i.fab{
+                     color: $pink;
+                   }
+                }
+               }
+           }
+        }
+
+        .copyright{
+
+          font-size: 1.8rem;
+          text-align: right;
+          height: 10vh;
+        }
+    }
+
+}

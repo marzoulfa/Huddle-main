@@ -1,0 +1,105 @@
+.wrapper{
+
+    background-image: linear-gradient(to top,
+     #bff3ff67, #dfedf1d0),
+      url(../images/bg-hero-mobile.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+
+    &__content{
+    padding: 3rem 1.8rem;
+
+        header
+        {
+ 
+              @include flex-between;
+              margin-bottom: 8rem;
+                .logo{
+                   height: 2rem;
+                 
+                }
+
+                .btn{
+                    background: #fff;
+                    padding:0.6rem 2.7rem;
+                    color: $veryDarkCyan;
+                    font-size: 1.5rem;
+                    box-shadow: 1px 1px 5px 2px #dce0e3;
+                }
+           
+        }
+
+
+        .hero{
+          
+            .hero__content{
+                @include flex-between;
+                flex-direction: column;
+                row-gap: 5rem;
+              .hero__text{
+                  margin-bottom: 5rem;
+              }
+                h1{
+                    margin-bottom: 3.5rem;
+                }
+                p{
+                    color: $veryDarkCyan;
+                    margin-bottom: 4rem;
+                }
+              
+            }
+           
+            img{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+}
+
+
+
+@media screen and (min-width: 968px) {
+    .wrapper{
+        padding: 3rem;
+        &__content{
+            
+            
+            header{
+                margin-bottom: 5rem;
+                
+                
+            }
+
+            .hero{
+          
+                .hero__content{
+                 flex-direction: row;
+                 
+                   
+                
+                    .hero__text{
+                      
+                      margin-bottom: 0;
+                      text-align: left;
+                      h1{
+                          font-size: 4rem;
+                          width: 70%;
+                      }
+                      p{
+                          width: 77%;
+                      }
+                    }
+                }
+
+                img{
+                    width: 50%;
+                }
+            }    
+        }
+        
+    }
+}

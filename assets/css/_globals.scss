@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 0.625rem
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: $openSans;
+    line-height: 1.5;
+}
+
+h1,h2,h3{
+   font-family: $poppins;
+   color: $veryDarkCyan;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    
+    border-radius: 2rem;
+    @include openSans_bold;
+}
+
+.btn--primary{
+    color: $veryPaleCyan;
+    background: $pink;
+    padding: 1.7rem 6rem;
+    border-radius: 3rem;
+    
+}

@@ -1,0 +1,41 @@
+
+//Colors
+
+$pink: hsl(322, 100%, 66%);
+$veryPaleCyan: hsl(193, 100%, 96%);
+$veryDarkCyan: hsl(192, 100%, 9%);
+$grayishBlue: hsl(208, 11%, 55%);
+$shadow : #dce0e3;
+
+
+//Typography
+
+$fontSize : 1.8rem;
+
+$poppins   : 'Poppins', sans-serif; //Headings
+$openSans  : 'Open Sans', sans-serif;//Body and call out to actions
+
+
+//Mixins
+
+@mixin openSans_bold {
+    font-family: $openSans;
+    font-weight: 700;
+}
+
+@mixin openSans_normal {
+    font-family: $openSans;
+    font-weight: 400;
+}
+
+@mixin flex-between {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+@mixin flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}

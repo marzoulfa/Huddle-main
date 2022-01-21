@@ -1,0 +1,51 @@
+.callout{
+    width: 36rem;
+    // border: 1px solid red;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #12121245;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    z-index: 999;
+
+
+
+    &__content{
+        padding: 4rem 1.1rem;
+
+        h2{
+            font-size: 1.8rem;
+        }
+
+        .btn--primary{
+           
+            display: block;
+            font-size: 1.3rem;
+            width: 75%;
+            margin: 3rem auto 0 auto;
+            box-shadow: 1px 3px 6px 3px #dbdbdb;
+        }
+    }
+}
+
+@media screen and (min-width: 968px){
+    .callout{
+         width: 75rem;
+         
+        &__content{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+            h2{
+                font-size: 3rem;
+            }
+
+            .btn--primary{
+                font-size: 2rem;
+                width: 47%;
+            }
+        }
+    }
+}
